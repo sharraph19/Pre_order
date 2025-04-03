@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Pre-Booking</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS file -->
+</head>
+<body>
+    <h1>📌 College Canteen Pre-Booking</h1>
+    
+    <div class="menu">
+        <div class="menu-item">
+            <h3>🍔 Veg Sandwich - ₹40</h3>
+            <button onclick="order('Veg Sandwich', 40)">Pre-Order</button>
+        </div>
+        <div class="menu-item">
+            <h3>🌯 Paneer Roll - ₹60</h3>
+            <button onclick="order('Paneer Roll', 60)">Pre-Order</button>
+        </div>
+        <div class="menu-item">
+            <h3>☕ Cold Coffee - ₹50</h3>
+            <button onclick="order('Cold Coffee', 50)">Pre-Order</button>
+        </div>
+        <div class="menu-item">
+            <h3>🍕 Cheese Pizza - ₹120</h3>
+            <button onclick="order('Cheese Pizza', 120)">Pre-Order</button>
+        </div>
+        <div class="menu-item">
+            <h3>🥤 Mango Shake - ₹70</h3>
+            <button onclick="order('Mango Shake', 70)">Pre-Order</button>
+        </div>
+    </div>
+
+    <div class="order-section">
+        <h2>Your Orders 🛒</h2>
+        <ul id="order-list"></ul>
+        <p>Total: <span id="total-price">₹0</span></p>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking JavaScript file -->
+</body>
+</html>
